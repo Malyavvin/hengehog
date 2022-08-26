@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Hedgehog</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <a href="">
+                    <img src="./src/img/header/Logo.svg" alt="">
+                </a>
+            </div>
+            <div class="burger">
+                <div class="burger-menu">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class="menu-btn " for="menu-toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menubox">
+                        <div class="header__logo">
+                            <img src="./src/img/header/Logo.svg" alt="">
+                        </div>
+                        <li><a class="menu-item" href="#home">Каталог</a></li>
+                        <li><a class="menu-item" href="#servisec">о нас</a></li>
+                        <li><a class="menu-item" href="#about">контакты</a></li>
+                        <li><a class="menu-item" href="#price">галерея</a></li>
+                        <a href="tel:+79655698998" class="tel">+7 (965) 569-89-98</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__header flex">
+                    <div class="header__menu flex">
+                        <div class="header__nav">
+                            <ul class="nav__list flex">
+                                <li class="dropdown flex">
+                                    <span class="item__icon"></span>
+                                    <a href="#" class="list__item">Каталог</a>
+                                    <ul class="dropdown__body">
+                                        <div class="dropdown__inner">
+                                            <li><a href="#" class="list__item">Ёжики</a></li>
+                                            <li><a href="#" class="list__item">Питание</a></li>
+                                            <li><a href="#" class="list__item">переноски</a></li>
+                                            <li><a href="#" class="list__item">Лекарства</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="flex">
+                                    <a href="#" class="list__item">о нас</a>
+                                </li>
+                                <li class="flex">
+                                    <a href="#" class="list__item">контакты</a>
+                                </li>
+                                <li class="flex">
+                                    <a href="#" class="list__item">галерея</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__phone flex">
+                            <div class="phone__icon">
+                                <img src="./src/img/header/phone-icon.svg" alt="" >
+                            </div>
+                            <a href="tel:+79655698998" class="tel">+7 (965) 569-89-98</a>
+                        </div>
+                        <a class="basket" href="#">
+                            <span class="value">1</span>
+                            <img src="./src/img/header/basket.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__content">
+                    <div class="flex__column">
+                        <img src="./src/img/header/title.svg" alt="" class="img__title">
+                        <h2 class="subtitle">тоже любят молоко</h2>
+                        <p class="content__text">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+                        <button type="submit" class="btn" id="header__btn">Купить ёжика</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section1">
+                <div class="section1__inner flex">
+                    <img src="./src/img/section1/hengehog1.png" alt="" class="hengehog1">
+                    <div class="flex__row">
+                        <div class="item">
+                            <div class="item__icon" id="item__icon-1">
+                                <img src="./src/img/section1/icon1.svg" alt="">
+                            </div>
+                            <div class="item__content">
+                                <h6 class="item__title">здоровье</h6>
+                                <p class="item__text">Собственная ферма, уход и содержание</p>
+                            </div>
+                        </div>
+                        <div class="flex__row2 flex">
+                            <div class="item">
+                                <div class="item__icon" id="item__icon-2">
+                                    <img src="./src/img/section1/icon2.svg" alt="">
+                                </div>
+                                <div class="item__content">
+                                    <h6 class="item__title">разведение ежиков</h6>
+                                    <p class="item__text">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item__icon" id="item__icon-3">
+                                    <img src="./src/img/section1/icon3.svg" alt="">
+                                </div>
+                                <div class="item__content">
+                                    <h6 class="item__title">любовь и забота</h6>
+                                    <p class="item__text">Каждому ежику мы дарим много внимания</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./src/img/section1/hengehog2.png" alt="" class="hengehog2">
+                </div>
+            </section>
+            <section class="section2">
+                <div class="container">
+                    <div class="swiper hengehog-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card" id="card1">
+                                    <span class="sale">-50%</span>
+                                    <div class="info">
+                                        <img src="./src/img/section2/info.svg" alt="">
+                                        <div class="info__card">
+                                            <div class="info__content flex">
+                                                <div class="hengehog__vacc flex">
+                                                    <img src="./src/img/section2/vacc.svg" alt="">
+                                                    <p>Привит</p>
+                                                </div>
+                                                <div class="hengehog__health flex">
+                                                    <img src="./src/img/section2/health.svg" alt="">
+                                                    <p>1235</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__inner">
+                                        <div class="card__row flex">
+                                            <div class="card__content">
+                                                <h5 class="card__title">Ежик “Евгений”</h5>
+                                                <p class="card__text">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </p>
+                                                <div class="price__block">
+                                                    <span class="old__price">3 000 ₽</span>
+                                                    <span class="new__price">1 500 ₽</span>
+                                                </div>
+                                            </div>
+                                            <div class="card__img">
+                                                <img src="./src/img/section2/card__img1.png" alt="" class="evg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="card__add"><img src="./src/img/section2/add.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" id="card2">
+                                    <span class="sale">-50%</span>
+                                    <div class="info">
+                                        <img src="./src/img/section2/info.svg" alt="">
+                                        <div class="info__card">
+                                            <div class="info__content flex">
+                                                <div class="hengehog__vacc flex">
+                                                    <img src="./src/img/section2/vacc.svg" alt="">
+                                                    <p>Привит</p>
+                                                </div>
+                                                <div class="hengehog__health flex">
+                                                    <img src="./src/img/section2/health.svg" alt="">
+                                                    <p>1235</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__inner">
+                                        <div class="card__row flex">
+                                            <div class="card__content">
+                                                <h5 class="card__title">Ежик “Максим”</h5>
+                                                <p class="card__text">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+                                                <div class="price__block">
+                                                    <span class="old__price">5 000 ₽</span>
+                                                    <span class="new__price">2 500 ₽</span>
+                                                </div>
+                                            </div>
+                                            <div class="card__img">
+                                                <img src="./src/img/section2/card__img2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="card__add"><img src="./src/img/section2/add.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" id="card1">
+                                    <span class="sale">-50%</span>
+                                    <div class="info">
+                                        <img src="./src/img/section2/info.svg" alt="">
+                                        <div class="info__card">
+                                            <div class="info__content flex">
+                                                <div class="hengehog__vacc flex">
+                                                    <img src="./src/img/section2/vacc.svg" alt="">
+                                                    <p>Привит</p>
+                                                </div>
+                                                <div class="hengehog__health flex">
+                                                    <img src="./src/img/section2/health.svg" alt="">
+                                                    <p>1235</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__inner">
+                                        <div class="card__row flex">
+                                            <div class="card__content">
+                                                <h5 class="card__title">Ежик “Евгений”</h5>
+                                                <p class="card__text">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимаение </p>
+                                                <div class="price__block">
+                                                    <span class="old__price">3 000 ₽</span>
+                                                    <span class="new__price">1 500 ₽</span>
+                                                </div>
+                                            </div>
+                                            <div class="card__img">
+                                                <img src="./src/img/section2/card__img1.png" alt="" class="evg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="card__add"><img src="./src/img/section2/add.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" id="card2">
+                                    <span class="sale">-50%</span>
+                                    <div class="info">
+                                        <img src="./src/img/section2/info.svg" alt="">
+                                        <div class="info__card">
+                                            <div class="info__content flex">
+                                                <div class="hengehog__vacc flex">
+                                                    <img src="./src/img/section2/vacc.svg" alt="">
+                                                    <p>Привит</p>
+                                                </div>
+                                                <div class="hengehog__health flex">
+                                                    <img src="./src/img/section2/health.svg" alt="">
+                                                    <p>1235</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__inner">
+                                        <div class="card__row flex">
+                                            <div class="card__content">
+                                                <h5 class="card__title">Ежик “Максим”</h5>
+                                                <p class="card__text">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+                                                <div class="price__block">
+                                                    <span class="old__price">5 000 ₽</span>
+                                                    <span class="new__price">2 500 ₽</span>
+                                                </div>
+                                            </div>
+                                            <div class="card__img">
+                                                <img src="./src/img/section2/card__img2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="card__add"><img src="./src/img/section2/add.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hengehog-prev">
+                        <img src="./src/img/section2/arrow-l.svg" alt="">
+                    </div>
+                    <div class="hengehog-next">
+                        <img src="./src/img/section2/arrow-r.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="container">
+                    <div class="order__forms">
+                        <form action="post" class="form" id="form">
+                            <h6 class="form__title">Заполните заявку и мы забронируем для Вас нового друга</h6>
+                            <fieldset class="radios__form">
+                                <fieldset class="radio__form1" id="r-1">
+                                    <input type="radio" id="buy-purpose-01" class="purpose__radio" name="purpose" checked>
+                                    <label class="buy-purpose__btn" for="buy-purpose-01">хочу ёжика для себя</label>
+                                    <input type="radio" id="buy-purpose-02" class="purpose__radio" name="purpose">
+                                    <label class="buy-purpose__btn" for="buy-purpose-02">хочу ёжика для детей</label>
+                                    <input type="radio" id="buy-purpose-03" class="purpose__radio" name="purpose">
+                                    <label class="buy-purpose__btn" for="buy-purpose-03">хочу ёжика для разведения</label>
+                                </fieldset>
+                                <fieldset class="radio__form2" id="r-2">
+                                     <label class="radio">
+                                        <input type="radio" class="radio__real" name="term" checked>
+                                        <span class="radio__fake"></span>
+                                        <span class="radio__title">Мне нужен 1-2 ёжика</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" class="radio__real" name="term">
+                                        <span class="radio__fake"></span>
+                                        <span class="radio__title">Мне нужны 3 и более ёжиков</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" class="radio__real" name="term">
+                                        <span class="radio__fake"></span>
+                                        <span class="radio__title">Мне нужны 3-4 ёжика</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" class="radio__real" name="term">
+                                        <span class="radio__fake"></span>
+                                        <span class="radio__title">Пока присматриваюсь</span>
+                                    </label>
+                                </fieldset>
+                            </fieldset>
+                            <fieldset action="post" class="inputs__form" id="i-f">
+                                <fieldset class="input__row flex">
+                                    <input type="text" class="input" id="user-name" placeholder="Ваше имя">
+                                    <input type="tel" class="input" id="user-tel" placeholder="Ваш телефон">
+                                    <input type="email" class="input" id="user-email" placeholder="Ваш e-mail">
+                                </fieldset>
+                                <textarea name="textarea" id="user-comments" class="textarea" cols="30" rows="10" placeholder="Комментарий к заявке"></textarea>
+                            </fieldset>
+                            <fieldset class="btn__inner">
+                                <button type="submit" class="btn form__btn" id="form__btn">Купить ёжика</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="section4">
+                <div class="container">
+                    <div class="content">
+                        <p class="hengehog__count"> У на осталось еще: <span class="underline"> 25 ёжиков </span></p>
+                        <p class="sub__text">Торопитесь! Акция действует до 26. 02. 2023</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row flex">
+                    <div class="footer__logo flex">
+                        <img src="./src/img/footer/footer__logo.svg" alt="">
+                        <div class="media__mob media flex">
+                            <a href="#" class="media__link"><img src="./src/img/footer/inst.svg" alt=""></a>
+                            <a href="#" class="media__link"><img src="./src/img/footer/fb.svg" alt=""></a>
+                            <a href="#" class="media__link"><img src="./src/img/footer/tw.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <div class="header__menu flex">
+                            <div class="header__nav">
+                                <ul class="nav__list flex">
+                                    <li class=" flex">
+                                        <a href="#" class="list__item">Каталог</a>
+                                    </li>
+                                    <li class="flex">
+                                        <a href="#" class="list__item">о нас</a>
+                                    </li>
+                                    <li class="flex">
+                                        <a href="#" class="list__item">контакты</a>
+                                    </li>
+                                    <li class="flex">
+                                        <a href="#" class="list__item">галерея</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="media flex">
+                                <a href="#" class="media__link"><img src="./src/img/footer/inst.svg" alt=""></a>
+                                <a href="#" class="media__link"><img src="./src/img/footer/fb.svg" alt=""></a>
+                                <a href="#" class="media__link"><img src="./src/img/footer/tw.svg" alt=""></a>
+                            </div>
+                            <div class="header__phone">
+                                <a href="tel:+79655698998" class="tel">+7 (965) 569-89-98</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description"><p>Все права защищены.<br>
+                                        Указанная стоимость товаров и условия их приобретения действительны на текущую дату.
+                                        </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="./src/js/jquery-3.6.0.min.js"></script>
+<script src="./src/scripts/script.js"></script>    
+</body>
+</html>
